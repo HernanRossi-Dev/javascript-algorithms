@@ -11,5 +11,5 @@ fib_dynamicPro = (n) => {
 
 	return cache[n];
 }
-fib_dynamicPro(15);
+fib_dynamicPro(1);
 

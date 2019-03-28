@@ -1,8 +1,6 @@
 function PermutationStep (num) {
 	const stringDigits = num.toString(10).split('');
 	const digits = stringDigits.map((dig) => parseInt(dig));
-	// console.log(stringDigits);
-	// console.log(digits.join(''));
 	const len = digits.length;
 	const rightList =[];
 	let leftList ;
@@ -13,14 +11,10 @@ function PermutationStep (num) {
 		}
 		let currentDigit = digits[i];
 		let compare = digits[i-1];
-			// console.log('i ', i, currentDigit, compare);
 		if (currentDigit > compare) {
-			// console.log(currentDigit + ' is greater than ' + compare);
 			digits[i-1] = currentDigit;
 			leftList = digits.slice(0, i);
 			rightList.push(compare);
-			console.log('Left List: ', leftList);
-			console.log('Right List: ', rightList);
 			i = -1;
 		} else {
 			rightList.push(currentDigit);

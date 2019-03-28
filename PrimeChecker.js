@@ -4,7 +4,6 @@ function PrimeChecker(num) {
 	let allPerms = permutations.map((x) => parseInt(x.join('')));
 	const reversSort = digits.sort((x, y) => x < y);
 	const max = parseInt(reversSort.join(''));
-	console.log(allPerms);
 	const primes = [1];
 	let table = new Array(max +1).fill(true);
 	for(let i = 2; i <= max; i++) {
@@ -19,16 +18,13 @@ function PrimeChecker(num) {
 			cur += i;
 		}
 	}
-	console.log(table);
 	let result = 0;
 	for (const perm of allPerms) {
-		console.log(perm, ' is prime?', table[perm]);
 		if (table[perm]) {
 
 			result = 1;
 		}
 	}
-	console.log(primes);
 	return result;
 }
 

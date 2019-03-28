@@ -1,7 +1,6 @@
 function TripleDouble(num1, num2) {
 	const str1 = num1.toString();
 	const str2 = num2.toString();
-
 	const tripleTable = Array(10).fill(false);
 	const doubleTable = Array(10).fill(false);
 	let prev, count = 1;

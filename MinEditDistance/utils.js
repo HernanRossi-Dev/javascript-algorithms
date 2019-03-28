@@ -16,8 +16,6 @@ exports.createDPTable = (lengthOne, lengthTwo) => {
 	for (let j = 0; j < cacheMatrix.length; j++) {
 		cacheMatrix[0][j].cost = j;
 	}
-	
-	
 	return cacheMatrix;
 }
 
