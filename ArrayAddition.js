@@ -30,7 +30,6 @@ function ArrayAddition(arr) {
 			memTable[i][j] = caseOne || caseTwo || caseThree;
 		}
 	}
-	// console.log(memTable[arr.length-1], upper);
 	return memTable[arr.length - 1][upper];
 }
 
