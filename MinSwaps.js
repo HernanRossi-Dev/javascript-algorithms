@@ -10,10 +10,8 @@ function MinSwaps(arr) {
 			const swap = arr[value -1];
 			arr[value -1] = value;
 			arr[pointer] = swap;
-			console.log('Swap: ', value, swap);
 			swaps++;
 		}
-		console.log(arr);
 	}
 	return swaps;
 }
